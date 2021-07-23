@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>姚智斌简历</title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/typo.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/index.css">
+		<script>
+			function loading1() {
+				document.getElementsByClassName('avatar')[0].style.display = 'block';
+				document.getElementsByClassName('loading')[0].style.display = 'none';
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<header class="header"></header>
+
+		<article class="container">
+			<section class="side" id="side">
+
+				<!-- 左栏固定开关，记得及时删除这段代码 Start-->
+				<!--           <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label> -->
+				<style>
+					@media (min-width: 750px) {
+						.switch {
+							position: relative;
+							display: inline-block !important;
+							width: 60px;
+							height: 34px;
+						}
+
+						.switch input {
+							display: none;
+						}
+
+						.slider {
+							position: absolute;
+							cursor: pointer;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							background-color: #ccc;
+							-webkit-transition: .4s;
+							transition: .4s;
+						}
+
+						.slider:before {
+							position: absolute;
+							content: "";
+							height: 26px;
+							width: 26px;
+							left: 4px;
+							bottom: 4px;
+							background-color: white;
+							-webkit-transition: .4s;
+							transition: .4s;
+						}
+
+						input:checked+.slider {
+							background-color: #1abc9c;
+						}
+
+						input:focus+.slider {
+							box-shadow: 0 0 1px #1abc9c;
+						}
+
+						input:checked+.slider:before {
+							-webkit-transform: translateX(26px);
+							-ms-transform: translateX(26px);
+							transform: translateX(26px);
+						}
+
+						.slider.round {
+							border-radius: 34px;
+						}
+
+						.slider.round:before {
+							border-radius: 50%;
+						}
+					}
+				</style>
+				<!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+				<!-- 个人肖像 -->
+				<section class="me">
+					<section class="portrait">
+						<div class="loading">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<!-- 头像照片 -->
+						<img class="avatar" src="assets/images/avatar.jpeg" onload="loading1()">
+					</section>
+
+					<h1 class="name">姚智斌</h1>
+					<h4 class="info-job">Web前端工程师 / Java工程师</h4>
+
+				</section>
+
+				<!-- 基本信息 -->
+				<section class="profile info-unit">
+					<h2>
+						<i class="fa fa-user" aria-hidden="true"></i>基本信息
+					</h2>
+					<hr />
+					<ul>
+						<li>
+							<label>个人信息</label>
+							<span>姚智斌 / 男 / 25岁</span>
+						</li>
+						<li>
+							<label>英语水平</label>
+							<span>CET-4</span>
+						</li>
+						<li>
+							<label>计算机水平</label>
+							<span>计算机二级</span>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 联系方式 -->
+				<section class="contact info-unit">
+					<h2>
+						<i class="fa fa-phone" aria-hidden="true"></i>联系方式
+					</h2>
+					<hr />
+					<ul>
+						<li>
+							<label>手机</label>
+							<a href="tel:18165250370" target="_blank">181-6525-0370</a>
+						</li>
+						<li>
+							<label>邮箱</label>
+							<a href="mailto:yzb12040015@163.com" target="_blank">yzb12040015@163.com</a>
+						</li>
+						<li>
+							<label>个人主页</label>
+							<a href="https://github.com/gudanya123/myResume" target="_blank">myResume</a>
+						</li>
+						<li>
+							<label>Github</label>
+							<a href="https://github.com/gudanya123/" target="_blank">一支鱼</a>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 技能点 -->
+				<section class="skill info-unit">
+					<h2>
+						<i class="fa fa-code" aria-hidden="true"></i>技能点
+					</h2>
+					<hr />
+					<ul>
+						<li>
+							<label>Vue</label>
+							<progress value="90" max="100"></progress>
+						</li>
+						<li>
+							<label>SpringBoot</label>
+							<progress value="85" max="100"></progress>
+						</li>
+						<li>
+							<label>React</label>
+							<progress value="85" max="100"></progress>
+						</li>
+						<li>
+							<label>小程序</label>
+							<progress value="85" max="100"></progress>
+						</li>
+						<li>
+							<label>Mysql</label>
+							<progress value="70" max="100"></progress>
+						</li>
+						<li>
+							<label>Redis</label>
+							<progress value="70" max="100"></progress>
+						</li>
+					</ul>
+				</section>
+
+				<section class="qrcode info-unit">
+					<h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+					<hr />
+					<img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true"
+						style="width: 100%;" alt="">
+				</section>
+
+				<!-- 技术栈 -->
+				<div class="stack info-unit">
+					<h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+					<hr />
+					<ul>
+						<li>
+							<label>前端</label>
+							<span>Vue、React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+						</li>
+						<li>
+							<label>后端</label>
+							<span>SSM、SpringBoot、MySQL、Redis、MongonDB RocketMQ</span>
+						</li>
+						<li>
+							<label>其他</label>
+							<span>Git、SVN、Markdown</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="main">
+
+
+				<!-- 工作经历 -->
+				<section class="work info-unit">
+					<h2>
+						<i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历
+					</h2>
+					<hr />
+					<ul>
+						<li>
+							<h3>
+								<span>杭州东方通信公司－软件工程师</span>
+								<time>2018.08 至 2020.12</time>
+							</h3>
+							<ul class="info-content">
+								<li>使用 vue、react、jquery 等前端框架根据设计师提供的设计稿设计出符合要求的 pc 端和移动端界面</li>
+
+								<li>wms系统入库流程线全程开发</li>
+								<li>负责一部分部分组件脚本和数据库的增删改查(node.js 和 java)</li>
+								<li>项目提交到 git,并提交开发文档</li>
+							</ul>
+						</li>
+						<li>
+							<h3>
+								<span>上海艾融软件公司－软件工程师 </span>
+								<time>2021.01-2021.08</time>
+							</h3>
+							<ul class="info-content">
+								<li>使用 vue、react、jquery 等前端框架根据设计师提供的设计稿设计出符合要求的 pc端和移动端界面</li>
+								<li>根据需求建立符合要求的数据库表(确定一些需要的字段和扩展字段,包括一些多对多、一对多关系)</li>
+								<li>负责部分服务端模块开发(商品分类、详情、评论、搜索等模块)</li>
+								<li>前后端联调,并部署到云服务器中,提交开发文档，提交git</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 项目经验 -->
+				<section class="project info-unit">
+					<h2>
+						<i class="fa fa-terminal" aria-hidden="true"></i>项目经验
+					</h2>
+					<hr />
+					<ul>
+						<li>
+							<h3>
+								<span>伟业网上电商系统</span>
+							</h3>
+							<ul class="info-content">
+								<li>软件环境:前端使用 vue、后端使用 springboot、springcloud等</li>
+								<li>开发工具:IDEA、webstorm、sublime、visual studio code 等</li>
+								<li>项目职责:
+									<p>1.该项目为团队项目,本人负责一部分页面布局和组件还有一部分服务端功能模块,并使用 git 上传并部署到服务器</p>
+									<p>2.整理项目文档和开发文档完成前后端交互</p>
+									<p>3.修复潜在的问题和bug并做好记录</p>
+								</li>
+								<li>项目描述:
+									<p>该项目采用 B/S 模型开发。该系统，前台包括商品的展示
+										(锐意独家模块、最新商品模块、疯狂抢购模块)以及用 户的登录、注册和购物模块等;
+										后台包括商品和类别的增删改及复杂查询，以及管理员和用户的注册、
+										登录验证及数据校 验、异常处理、代理设计、业务逻辑扩展。</p>
+								</li>
+								<li>个人总结:
+									<p>前后端分离开发加强了开发效率,对 vue 框架的组件核心有了新的认识，也加深了业务分层模块分类的理解，对商城
+										这类项目有了非常深刻的认识，并能够提出自己的看法和见解。
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>
+								<span>菜递员微信小程序和微信公众号</span>
+							</h3>
+							<ul class="info-content">
+								<li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
+								<li>项目职责:
+									<p>1. 快速搭建前端项目分为 UI、Store、Project 三部分</p>
+									<p>2. UI 部分:基于 Vue 开发的 UI 组件库,制定组件规范,保证高复用性,负责组件库及其大部分组件的开发</p>
+									<p>3. Store 组件材料公共仓库,负责仓库平台侧的搭建,统一仓库目录、封装 webpack 打造多功能 cli 开发工具</p>
+									<p>4. Project 项目脚手架框架, 集成 Vue 全家桶、单元测试、发布工具等能力的项目规范化开发框架</p>
+								</li>
+								<li>个人总结:
+									<p>1. vue 提供了一个数据管理工具 vuex，有点类似于 angular 中 factory 和 service，可以进行数据上的通信。 比如存储一
+										些公共变量或者是不同组件间的数据处理等。</p>
+									<p>2. vue-router 是 vue 的路由系统，可以用来创建单页应用。基本思想是在主页面中引入标签，然后定义路由，把 router
+										挂在到app上，然后把各个子页面渲染到view里面。使用起来还是很方便的， 跳转页面只需要router.push('index')</p>
+									<p>3. 如果是和子组件通信，可以使用 ref 就可以实现，使用 emit 来发送广播 vue2 提供了一套广播机制，即一边发送广播， 一边接收广播来执行相应操作
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>
+								<span>个人项目</span>
+							</h3>
+							<ul class="info-content">
+								<li>
+									<span class="link">
+										<a href="https://gudanya123.github.io/jd-h5/." target="_blank">京东商城首页</a>
+									</span>
+									<span class="link">
+										<a href="https://github.com/gudanya123/vue-ele" target="_blank">饿了么</a>
+									</span>
+									<span class="link">
+										<a href="https://github.com/gudanya123/vue-music" target="_blank">QQ音乐WebApp</a>
+									</span>
+									<span class="link">
+										<a href="https://github.com/gudanya123/mi-shop" target="_blank">小米商城</a>
+									</span>
+								</li>
+								<li>个人总结:
+									<p>通过这些项目的开发与学习，首次体验了服务器的搭建，网站开发过程中前台与后台的融合，加强了对框架和数据
+									   库的理解，以及感受到前后端开发和组件化开发的高效。</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 教育经历 -->
+				<section class="edu info-unit">
+					<h2>
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历
+					</h2>
+					<hr />
+					<ul>
+						<li>
+							<h3>
+								<span>杭州电子科技大学 - 电子科学与技术专业</span>
+								<time>2014.9-2018.7</time>
+							</h3>
+						</li>
+					</ul>
+				</section>
+				<br />
+
+				<!-- 自我评价 -->
+				<section class="work info-unit">
+					<h2>
+						<i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望
+					</h2>
+					<hr />
+					<ul>
+						<li>思维严谨，有较强的学习及适应能力</li>
+						<li>有良好的沟通能力，组织协调能力，具有很强的团队协作意识</li>
+						<li>工作主动，责任心、执行力及抗压性强，能够积极的面对并解决工作中的问题</li>
+						<li>具有较强的文档撰写能力，具备独立分析和解决问题的能力，有良好的职业道德和工作态度，工作认真、踏实，责任心和进
+							取心强，有良好的客户交流沟通能力和需求理解能力，较强的协作精神和团队意识</li>
+					</ul>
+				</section>
+			</section>
+		</article>
+
+
+
+		<footer class="footer">
+			<p>© 2020 姚智斌.文档最后更新时间为
+				<time>2020年06月20日</time>.
+			</p>
+		</footer>
+
+		<!-- 侧栏 -->
+		<aside>
+			<ul>
+				<li>
+					<a href="https://github.com/gudanya123/myResume" target="_blank">源代码</a>
+				</li>
+				<li>
+					<a href="https://juejin.cn/user/3413343412694216/posts" target="_blank">Blog</a>
+				</li>
+			</ul>
+		</aside>
+
+		<script src="./assets/js/index.js"></script>
+	</body>
+
+</html>
